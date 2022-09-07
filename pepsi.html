@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pepsi_style.css">
+</head>
+<body>
+    <section class="sec">
+        <header>
+            <a href="#"><img src="logo.png" alt="pepsi logo" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">What's new</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textbox">
+                <h2>That's What<br><span>I Like</span></h2>
+                <p>PepsiCo is the largest food and beverage company in North America and the second-largest in the world, behind only Nestlé. 
+                    PepsiCo's products include a wide range of household-name food and beverage brands, including Pepsi, Gatorade, Frito-Lay, Quaker Oats, Rockstar Energy, and Muscle Milk.</p>
+                    <a href="#">view all products </a>
+            </div>
+            <div class="imgbox">
+                <img src="pepsi001.png" alt="" class="pepsi">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="pepsi001.png" alt="" onclick="imgSlider('pepsi001.png');bgcolor('blue')"></href></li>
+            <li><img src="pepsi002.png" alt="" onclick="imgSlider('pepsi002.png');bgcolor('#e60c2c')"></li>
+            <li><img src="pepsi003.png" alt="" onclick="imgSlider('pepsi003.png');bgcolor('#1e1e1e')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="twitter.png" alt=""></a></li>
+            <li><a href="#"><img src="instagram.png" alt=""></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.pepsi').src=anything;
+        }
+        function bgcolor(color){
+            const sec =document.querySelector('.sec');
+            sec.style.background=color;
+        }
+    </script>
+</body>
+</html>
